@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+  background: linear-gradient(45deg, #2196f3, #826288);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1d201f;
+}
+
+.App-header {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  animation: App-header-animation 2s infinite alternate;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes App-header-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.App-content {
+  padding: 20px;
+  background-color: #060215;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  animation: App-content-animation 2s infinite alternate;
+}
+
+@keyframes App-content-animation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(5deg);
+  }
+}
+
+
+
+/* Card Styles */
+.card {
+  background-color: #efe7e7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  width: 400px;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Form Styles */
+.form-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #e31d52;
+}
+/* Record List Styles */
+.record-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.record-list li {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+}
